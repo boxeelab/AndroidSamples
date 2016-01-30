@@ -68,6 +68,9 @@
     <string name="edittext_title">EditText</string>
     <string name="edittext_summary">This demostrate edittext prefernece</string>
     <string name="google_page">Google page</string>
+    <string name="pref_category_1">Category 1</string>
+    <string name="pref_category_2">Category 2</string>
+    <string name="voicemail_ringtone_title">Ringtone</string>
 
     <string-array name="list_pre">
         <item>Choice 1</item>

@@ -1,32 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceCategory
+        android:key="@string/pref_category_1"
+        android:title="Category">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_checkbox_pref_key"
+            android:summary="@string/summary_checkbox"
+            android:title="@string/title_checkbox_pref"></CheckBoxPreference>
 
-    <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="pref_checkbox_pref_key"
-        android:summary="@string/summary_checkbox"
-        android:title="@string/title_checkbox_pref">
-    </CheckBoxPreference>
+        <ListPreference
+            android:entries="@array/list_pre"
+            android:entryValues="@array/list_pre"
+            android:key="list_pref_key"
+            android:summary="@string/list_pref_summary"
+            android:title="@string/list_prefernec"></ListPreference>
 
-    <ListPreference
-        android:entries="@array/list_pre"
-        android:entryValues="@array/list_pre"
-        android:key="list_pref_key"
-        android:summary="@string/list_pref_summary"
-        android:title="@string/list_prefernec">
-    </ListPreference>
+        <EditTextPreference
+            android:defaultValue="Defualt value"
+            android:key="edittext_key"
+            android:summary="@string/edittext_summary"
+            android:title="@string/edittext_title"></EditTextPreference>
 
-    <EditTextPreference
-        android:defaultValue="Defualt value"
-        android:key="edittext_key"
-        android:summary="@string/edittext_summary"
-        android:title="@string/edittext_title">
-    </EditTextPreference>
+        <Preference android:title="@string/google_page">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.google.com" />
+        </Preference>
 
-    <Preference android:title="@string/google_page" >
-        <intent android:action="android.intent.action.VIEW"
-            android:data="http://www.google.com" />
-    </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/pref_category_2"
+        android:title="Category">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_checkbox_pref_key_1"
+            android:summary="@string/summary_checkbox"
+            android:title="@string/title_checkbox_pref"></CheckBoxPreference>
+
+        <ListPreference
+            android:entries="@array/list_pre"
+            android:entryValues="@array/list_pre"
+            android:key="list_pref_key"
+            android:dependency="pref_checkbox_pref_key_1"
+            android:summary="@string/list_pref_summary"
+            android:title="@string/list_prefernec"></ListPreference>
+
+        <RingtonePreference
+            android:key="button_voicemail_ringtone_key"
+            android:title="@string/voicemail_ringtone_title"
+            android:ringtoneType="notification"  />
+
+   </PreferenceCategory>
+
+
 
 </PreferenceScreen>
