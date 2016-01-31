@@ -61,7 +61,7 @@
 
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="check_box_pref_tiletle" />
-    <string name="title_checkbox_pref" >Checkbox</string>
+    <string name="title_checkbox_pref">Checkbox</string>
     <string name="summary_checkbox">This provides checkbox settings functionality</string>
     <string name="list_prefernec">List Preference</string>
     <string name="list_pref_summary">This demostrate list preference</string>
@@ -78,4 +78,5 @@
         <item>Choice 3</item>
         <item>Choice 4</item>
     </string-array>
+    <string name="title_activity_settings1">Settings</string>
 </resources>
