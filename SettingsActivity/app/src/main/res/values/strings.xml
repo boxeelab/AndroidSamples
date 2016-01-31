@@ -79,4 +79,12 @@
         <item>Choice 4</item>
     </string-array>
     <string name="title_activity_settings1">Settings</string>
+
+    <string name="string_header1">Header1</string>
+    <string name="string_header1_summary">Header 1 description</string>
+
+    <string name="string_header2">Header2</string>
+    <string name="string_header2_summary">Header 2 description</string>
+
+
 </resources>

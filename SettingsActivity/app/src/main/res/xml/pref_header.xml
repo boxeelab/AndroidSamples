@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header
+        android:title="@string/string_header1"
+        android:summary="@string/string_header1_summary"
+        android:fragment="com.pingdjmsample.settingsactivity.app.settingsactivity.SettingsFragment"></header>
+
+    <header
+        android:title="@string/string_header2"
+        android:summary="@string/string_header2_summary"
+        android:fragment="com.pingdjmsample.settingsactivity.app.settingsactivity.SettingsFragment"></header>
+
+</preference-headers>
